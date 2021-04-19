@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  alpitour.integration.marketingcloud:
+    image: ${DOCKER_REGISTRY-}alpitourintegrationmarketingcloud
+    build:
+      context: .
+      dockerfile: Alpitour.Integration.MarketingCloud/Dockerfile

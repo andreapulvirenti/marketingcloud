@@ -7,10 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alpitour.Integration.Market
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "b2x", "b2x", "{E6A3AB26-9FF0-4BA9-9CA8-00A3E3C5C7D6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2147BE7-7B3C-415B-9EA1-F7D54F7CFBA8}"
-	ProjectSection(SolutionItems) = preProject
-		script.ps1 = script.ps1
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAppWebApi", "DemoAppWebApi\DemoAppWebApi.csproj", "{C8C64CDA-4503-41F5-B642-96C23053E819}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +19,10 @@ Global
 		{114D1036-2315-4D50-B776-62AE6ABDD29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114D1036-2315-4D50-B776-62AE6ABDD29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114D1036-2315-4D50-B776-62AE6ABDD29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C64CDA-4503-41F5-B642-96C23053E819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C64CDA-4503-41F5-B642-96C23053E819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C64CDA-4503-41F5-B642-96C23053E819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C64CDA-4503-41F5-B642-96C23053E819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

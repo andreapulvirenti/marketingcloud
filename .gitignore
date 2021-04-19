@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/Alpitour.Integration.MarketingCloud/v16
+/.vs/Alpitour.Integration.MarketingCloud/DesignTimeBuild
+/Alpitour.Integration.MarketingCloud/bin
+/Alpitour.Integration.MarketingCloud/obj
+/DemoAppWebApi/bin
+/DemoAppWebApi/obj

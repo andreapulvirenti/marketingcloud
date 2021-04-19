@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  alpitour.integration.marketingcloud:
+    image: alpitourintegrationmarketingcloud:dev
+    container_name: Alpitour.Integration.MarketingCloud
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Alpitour.Integration.MarketingCloud"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_alpitour.integration.marketingcloud$
+    volumes:
+      - C:\Source\Alpitour.Integration.MarketingCloud\Alpitour.Integration.MarketingCloud:/app
+      - C:\Source\Alpitour.Integration.MarketingCloud:/src
+      - C:\Users\pulvir2\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_alpitour.integration.marketingcloud$
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_alpitour.integration.marketingcloud$ \"bin/Debug/netcoreapp3.1/Alpitour.Integration.MarketingCloud.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
